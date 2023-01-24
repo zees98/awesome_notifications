@@ -61,6 +61,7 @@ class AwesomeAssertUtils {
   static extractValue(String reference, Map dataMap, Type T) {
     dynamic defaultValue = _getDefaultValue(reference, T);
     dynamic value = dataMap[reference];
+    print("value $value");
 
     if (value is String) {
       String valueCasted = value;
